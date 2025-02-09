@@ -111,6 +111,7 @@ function nextQuestion() {
 
 // Exibir resultado final
 // Exibir resultado final de forma mais dinâmica
+// Exibir resultado final
 function showResults() {
     let finalGrade = (score / questions.length) * 10;
 
@@ -165,8 +166,23 @@ function showResults() {
 
     resultHTML += `</tbody></table>`;
 
+    // Adicionando botão de "Jogar Novamente"
+    resultHTML += `
+        <button onclick="restartQuiz()" style="margin-top: 20px; background: linear-gradient(135deg, #28a745, #218838);">Jogar Novamente</button>
+    `;
+
     questionContainer.innerHTML = resultHTML;
     nextButton.style.display = "none";
+}
+
+// Reiniciar o quiz
+function restartQuiz() {
+    currentQuestionIndex = 0;
+    score = 0;
+    userAnswers.length = 0; // Zera as respostas anteriores
+
+    quizContainer.classList.add("hidden"); // Esconde o quiz
+    categoryContainer.classList.remove("hidden"); // Mostra a seleção de categorias
 }
 
 // Função para ordenar a tabela dinamicamente
