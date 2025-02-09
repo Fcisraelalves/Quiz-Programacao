@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Programação</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="start-container">
+        <h1 id="initial-title">Bem-vindo ao Quiz de Programação!</h1>
+        <h2 id="sub-title">Da base ao infinito: conquiste o mundo da programação! 🌍⚡</h2>
+        <button onclick="startQuiz()">Iniciar Quiz</button>
+    </div>
+
+    <div id="category-container" class="hidden">
+        <h2 id="selection-title">Escolha um tema:</h2>
+        <button onclick="selectCategory('IP')">Introdução à Programação</button>
+        <button onclick="selectCategory('Estruturada')">Programação Estruturada</button>
+        <button onclick="selectCategory('POO')">Programação Orientada a Objetos</button>
+    </div>
+
+    <div id="quiz-container" class="hidden">
+        <h1 id="quiz-title">Quiz de Programação</h1>
+        <div id="question-container"></div>
+        <button id="next-button" class="hidden">Próxima Pergunta</button>
+    </div>
+    <button id="toggle-bg">Trocar Fundo</button>
+    <script src="JS/questionsIP.js"></script>
+    <script src="JS/questionsEstruturada.js"></script>
+    <script src="JS/questionsPOO.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+</html>
