@@ -12,7 +12,7 @@ body {
 #quiz-container, #start-container, #category-container {
     width: 50%;
     margin: 50px auto;
-    background: rgba(255, 255, 255, 0.2); /* Branco com 70% de opacidade */
+    background: rgba(255, 255, 255, 0.2); 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -27,7 +27,7 @@ body {
     flex-direction: column;
     border-radius: 50px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    background: rgba(255, 255, 255, 0.2); /* Aplica opacidade só no fundo */
+    background: rgba(255, 255, 255, 0.2); 
 }
 
 
@@ -126,7 +126,6 @@ ul {
     font-weight: bold;
 }
 
-/* Estilização da tabela */
 #result-table {
     width: 100%;
     border-collapse: collapse;
@@ -159,11 +158,11 @@ ul {
 }
 
 .correct-row {
-    background-color: #c8e6c9 !important; /* Verde */
+    background-color: #c8e6c9 !important; 
 }
 
 .incorrect-row {
-    background-color: #ffcdd2 !important; /* Vermelho */
+    background-color: #ffcdd2 !important; 
 }
 
 @media (max-width: 768px) {
