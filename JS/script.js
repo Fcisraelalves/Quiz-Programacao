@@ -166,11 +166,6 @@ function showResults() {
 
     resultHTML += `</tbody></table>`;
 
-    // Adicionando botão de "Jogar Novamente"
-    resultHTML += `
-        <button onclick="restartQuiz()" style="margin-top: 20px; background: linear-gradient(135deg, #28a745, #218838);">Jogar Novamente</button>
-    `;
-
     questionContainer.innerHTML = resultHTML;
     nextButton.style.display = "none";
 }
