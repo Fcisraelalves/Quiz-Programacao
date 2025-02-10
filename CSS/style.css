@@ -3,7 +3,8 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #99cd85;
+background: url("/IMG/planet.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
 
 
