@@ -20,7 +20,7 @@ const backgrounds = [
 ];
 
 let currentIndex = 0; // Começa no primeiro fundo
-
+body.style.backgroundImage = `url('${backgrounds[currentIndex]}')`;
 // 🔥 Pré-carregar imagens
 const preloadedImages = [];
 backgrounds.forEach(src => {
