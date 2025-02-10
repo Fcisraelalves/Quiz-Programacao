@@ -195,3 +195,4 @@ function sortTable(columnIndex) {
 
 
 nextButton.addEventListener("click", nextQuestion);
+alert("Olá, boa sorte em nosso quiz!")
