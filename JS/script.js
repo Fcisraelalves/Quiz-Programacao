@@ -14,9 +14,9 @@ const body = document.body;
 
 const backgrounds = [
    
-    "../IMG/aurora.webp",
-    "../IMG/planet.jpg",
-    "../IMG/night_sky.jpg",
+    "IMG/aurora.webp",
+    "IMG/planet.jpg",
+    "IMG/night_sky.jpg",
 ];
 
 let currentIndex = 0; // Começa no primeiro fundo
