@@ -19,9 +19,8 @@ const backgrounds = [
     "IMG/night_sky.jpg",
 ];
 
-let currentIndex = 0; // Começa no primeiro fundo
+let currentIndex = 0; 
 
-// 🔥 Pré-carregar imagens
 const preloadedImages = [];
 backgrounds.forEach(src => {
     const img = new Image();
@@ -35,13 +34,11 @@ toggleBgButton.addEventListener("click", () => {
     body.style.backgroundImage = `url('${backgrounds[currentIndex]}')`;
 });
 
-// Tela inicial
 function startQuiz() {
     startContainer.style.display = "none";
     categoryContainer.classList.remove("hidden");
 }
 
-// Seleção de categoria
 function selectCategory(category) {
     categoryContainer.style.display = "none";
     quizContainer.classList.remove("hidden");
@@ -57,7 +54,6 @@ function selectCategory(category) {
     showQuestion();
 }
 
-// Exibir pergunta
 function showQuestion() {
     const questionData = questions[currentQuestionIndex];
     questionContainer.innerHTML = `
@@ -73,7 +69,6 @@ function showQuestion() {
     nextButton.classList.add("hidden");
 }
 
-// Selecionar resposta
 function selectAnswer(selectedIndex) {
     const questionData = questions[currentQuestionIndex];
     userAnswers[currentQuestionIndex] = selectedIndex;
@@ -98,7 +93,6 @@ function selectAnswer(selectedIndex) {
     nextButton.classList.remove("hidden");
 }
 
-// Próxima pergunta
 function nextQuestion() {
     currentQuestionIndex++;
 
@@ -109,9 +103,6 @@ function nextQuestion() {
     }
 }
 
-// Exibir resultado final
-// Exibir resultado final de forma mais dinâmica
-// Exibir resultado final
 function showResults() {
     let finalGrade = (score / questions.length) * 10;
 
@@ -170,17 +161,15 @@ function showResults() {
     nextButton.style.display = "none";
 }
 
-// Reiniciar o quiz
 function restartQuiz() {
     currentQuestionIndex = 0;
     score = 0;
-    userAnswers.length = 0; // Zera as respostas anteriores
+    userAnswers.length = 0; 
 
-    quizContainer.classList.add("hidden"); // Esconde o quiz
-    categoryContainer.classList.remove("hidden"); // Mostra a seleção de categorias
+    quizContainer.classList.add("hidden"); 
+    categoryContainer.classList.remove("hidden"); 
 }
 
-// Função para ordenar a tabela dinamicamente
 function sortTable(columnIndex) {
     let table = document.getElementById("result-table");
     let tbody = table.querySelector("tbody");
