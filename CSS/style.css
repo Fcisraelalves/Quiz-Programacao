@@ -3,7 +3,7 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    background: url("IMG/aurora.webp") no-repeat center center fixed;
+    background: url("../IMG/aurora.webp") no-repeat center center fixed;
     background-size: cover;
 }
 
